@@ -1,0 +1,12 @@
+//user cursor rules. will override dms rules only if included in the main config after their includes
+
+//the commented out lines mean they're already defined in the dms/layout.kdl. Only uncomment them if you want them to be overriden!
+
+cursor {
+    // xcursor-theme "volantes_cursors"
+    // // xcursor-size 60
+    // // hide-when-typing
+    //  hide-after-inactive-ms 1000   
+}
+
+//didn't need to anymore because DMS has a built-in option to hide cursor after a timeout

@@ -1,0 +1,97 @@
+//custom universal window rules
+window-rule {
+    // opacity 0.9
+    background-effect {
+        // blur true
+        // noise 0.1
+        // saturation 1.0
+    }
+}
+
+// window blur for kitty
+window-rule {
+    match app-id="kitty"
+    match app-id="firefox"
+    match app-id="konsole"
+    match app-id="codium"
+    match app-id="dolphin"
+    opacity 0.9
+    background-effect {
+        blur true
+        // noise 0.1
+        // saturation 1.0
+    }   
+}
+
+
+window-rule {
+    match app-id="copyq"
+    opacity 0.8
+    background-effect {
+        blur true
+        // noise 0.1
+        // saturation 1.0
+    }   
+
+}
+
+// window rule for kando
+window-rule {
+    match title="Kando Menu"
+    open-floating true
+    focus-ring { off; }
+    border { off; }
+    shadow { off; }
+    default-floating-position x=0 y=0
+}
+
+
+//window rule for opening yazi globally maximised
+
+  window-rule {
+        match app-id="kitty-yazi"
+        open-maximized true
+ }
+
+ window-rule {
+    match app-id="kitty-aerc"
+    open-maximized true
+
+    border {
+        active-color "#ffffff"
+    }
+ }
+
+ // window rule for screencasted windows
+ // Indicate screencasted windows with red colors.
+window-rule {
+    match is-window-cast-target=true
+
+    draw-border-with-background true
+    // opacity 1.00
+    background-effect {
+        blur false
+    }
+    focus-ring {
+        width 4
+        active-color "#7d0d2d"
+        inactive-color "#bc919d"
+    }
+
+    tab-indicator {
+        active-color "#7d0d2d"
+        inactive-color "#f38ba8"
+    }
+
+    shadow {
+        color "#7d0d2d70"
+    }
+
+    border {
+        active-color "#7d0d2d"
+        inactive-color "#f38ba8"
+
+    }
+
+
+}

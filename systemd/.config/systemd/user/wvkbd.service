@@ -1,0 +1,15 @@
+; /home/ateebamateen/.config/systemd/user/wvkbd.service
+
+[Unit]
+Description=wvkbd on-screen keyboard
+PartOf=graphical-session.target
+After=graphical-session.target
+Requisite=graphical-session.target
+
+[Service]
+ExecStart=%h/.local/bin/wvkbd-launch.sh
+Restart=always
+RestartSec=2
+StartLimitBurst=10
+StartLimitIntervalSec=60
+

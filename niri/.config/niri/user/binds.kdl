@@ -1,0 +1,63 @@
+// /home/ateebamateen/.config/niri/user/binds.kdl
+
+binds {
+    // ------------------------------------------
+    // custom key bindings:
+    //For copyQ
+    Ctrl+Alt+V {
+        spawn "copyq" "toggle";
+    }
+    // For yazi
+  
+    Mod+E {
+        spawn "kitty" "--app-id" "kitty-yazi" "-e" "yazi";
+    }
+
+    Mod+M {
+          spawn "kitty" "--app-id" "kitty-aerc" "-e" "aerc";
+    }
+
+// for maximizing window to edges (no built-in shortcut)
+
+    Mod+Ctrl+F{
+    maximize-window-to-edges
+    }
+
+    Mod+D{
+    spawn "fuzzel";
+    }
+    // ------------------------------------------
+    // Wallpaper Carousel
+    Mod+Tab {
+        spawn "dms" "ipc" "wallpaperCarousel" "toggle";
+    }
+    Mod+V hotkey-overlay-title="Clipboard Manager" {
+        spawn-sh "dms ipc call clipboardPlus togglePanel";
+    }
+
+    // --------------------------------------------
+    // For Closing Workspaces
+    Mod+Shift+Q {
+        spawn-sh "~/dotfiles/scripts/close-workspace.sh";
+    }
+
+
+    Ctrl+Space {
+    spawn-sh "kando --menu KandoMenu";  
+    }
+
+
+
+
+    // fo dynamic screencasting
+        Mod+Ctrl+Shift+W {  set-dynamic-cast-window; }
+        Mod+Ctrl+Shift+M {set-dynamic-cast-monitor; }
+        Mod+Ctrl+Shift+Escape {clear-dynamic-cast-target;} 
+
+// Mod+Ctrl+Shift+C {  set-dynamic-cast-column; }
+// that doesn't exist
+        // for mirroring to another screen
+        // Mod+P repeat=false { spawn-sh "wl-mirror $(niri msg --json focused-output | jq -r .name)";}
+}
+
+    

@@ -1,0 +1,106 @@
+// DMS Window Rules - Managed by DankMaterialShell
+// Do not edit manually - changes may be overwritten
+
+// @id=wr_1776009699221793674 @name=Yakuake
+window-rule {
+    match app-id="^org.kde.yakuake$"
+    opacity 0.98
+    open-floating true
+    min-width 1200
+    max-width 1200
+    min-height 600
+    max-height 700
+}
+
+// @id=wr_1776009910516334152 @name=kitty
+window-rule {
+    match app-id="^kitty$"
+    opacity 0.85
+}
+
+// @id=wr_1776012002810992667 @name=Copyq
+window-rule {
+    match app-id="^com.github.hluk.copyq$"
+    opacity 0.96
+    open-floating true
+    min-width 800
+    max-width 800
+    min-height 600
+    max-height 600
+}
+
+// @id=wr_1776012322357598892 @name=org.kde.konsole
+window-rule {
+    match app-id="^org.kde.konsole$"
+}
+
+// @id=wr_1776184645563739362 @name=Alacritty
+window-rule {
+    match app-id="^Alacritty$"
+}
+
+// @id=wr_1776276429642659805 @name=obsidian
+window-rule {
+    match app-id="^obsidian$"
+    open-maximized true
+}
+
+// @id=wr_1776333813282852622 @name=com.github.xournalpp.xournalpp
+window-rule {
+    match app-id="^com.github.xournalpp.xournalpp$"
+    open-maximized true
+}
+
+// @id=wr_1776361072153405034 @name=org.mozilla.Thunderbird
+window-rule {
+    match app-id="^org.mozilla.Thunderbird$"
+    open-maximized true
+}
+
+// @id=wr_1776674314943615340 @name=vlc
+window-rule {
+    match app-id="^vlc$"
+    open-maximized true
+}
+
+// @id=wr_1777035968669920374 @name=kitty
+window-rule {
+    match app-id="^kitty$"
+    block-out-from "screencast"
+}
+
+// @id=wr_1777120779960090406 @name=org.quickshell
+window-rule {
+    match app-id="^org.quickshell$" title="Settings"
+    opacity 0.97
+    open-maximized true
+    tiled-state true
+}
+
+// @id=wr_1777120831464275591 @name=org.quickshell
+window-rule {
+    match app-id="^org.quickshell$" title="Settings"
+    opacity 0.98
+    open-maximized true
+    tiled-state true
+}
+
+// @id=wr_1777224505475893468 @name=org.keepassxc.KeePassXC
+window-rule {
+    match app-id="^org.keepassxc.KeePassXC$"
+    open-on-workspace "autostart"
+    block-out-from "screencast"
+}
+
+// @id=wr_1777224533969616066 @name=org.mozilla.Thunderbird
+window-rule {
+    match app-id="^org.mozilla.Thunderbird$"
+    open-on-workspace "autostart"
+}
+
+// @id=wr_1777224559813584713 @name=com.github.wwmm.easyeffects
+window-rule {
+    match app-id="^com.github.wwmm.easyeffects$"
+    open-on-workspace "autostart"
+}
+

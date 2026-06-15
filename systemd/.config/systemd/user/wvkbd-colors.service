@@ -1,0 +1,8 @@
+; /home/ateebamateen/.config/systemd/user/wvkbd-colors.service
+
+[Unit]
+Description=Restart wvkbd on DMS color change
+
+[Service]
+Type=oneshot
+ExecStart=systemctl --user restart wvkbd.service

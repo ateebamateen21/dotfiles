@@ -1,0 +1,15 @@
+; /home/ateebamateen/.config/systemd/user/lisgd.service
+
+[Unit]
+Description=lisgd touch gesture daemon
+PartOf=graphical-session.target
+After=graphical-session.target
+Requisite=graphical-session.target
+
+[Service]
+ExecStartPre=/bin/sleep 5
+ExecStart=%h/.local/bin/lisgd-gestures.sh
+Restart=on-failure
+RestartSec=5
+
+

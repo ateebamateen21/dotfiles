@@ -1,0 +1,4 @@
+# /home/ateebamateen/.config/aerc/mailcap
+
+[viewer]
+alternatives=text/plain,text/html

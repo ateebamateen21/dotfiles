@@ -1,0 +1,39 @@
+//user layout rules. will override dms rules only if included in the main config after their includes
+
+//the commented out lines mean they're already defined in the dms/layout.kdl. Only uncomment them if you want them to be overriden!
+
+
+        layout {
+        // gaps 4
+        background-color "#00000045"
+
+
+        border {
+        // width 3
+        }
+
+        focus-ring {
+        // width 3
+        }
+
+
+        tab-indicator {
+        // off
+        on
+        hide-when-single-tab
+        place-within-column
+        gap 5
+        width 30
+        length total-proportion=0.7
+        position "left"
+        gaps-between-tabs 10
+        corner-radius 8
+        // active-color "red"
+        // inactive-color "gray"
+        // urgent-color "blue"
+        // active-gradient from="#12d563" to="#0b1824" angle=45
+        // inactive-gradient from="#505050" to="#696969" angle=45 relative-to="workspace-view"
+        // urgent-gradient from="#800" to="#a33" angle=45
+    }
+        }
+        

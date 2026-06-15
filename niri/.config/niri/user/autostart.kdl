@@ -1,0 +1,10 @@
+//apps to spawn at start
+spawn-at-startup "keepassxc"
+// spawn-at-startup "easyeffects"
+spawn-sh-at-startup "wl-paste --watch cliphist store"
+spawn-at-startup "bash" "/home/ateebamateen/dotfiles/scripts/battery_logger.sh"
+spawn-at-startup "kitty" "-e" "aerc";
+//spawn-at-startup "bash" "-c" "sleep 2 && plasma-apply-colorscheme BreezeDark && plasma-apply-colorscheme DankMatugen"
+// spawn-sh-at-startup "easyeffects --gapplication-service"
+spawn-sh-at-startup "libinput-gestures-setup start"
+spawn-at-startup "bash" "-c" "ssh-agent -a $XDG_RUNTIME_DIR/ssh-agent.socket"
