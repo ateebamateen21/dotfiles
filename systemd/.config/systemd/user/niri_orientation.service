@@ -1,0 +1,17 @@
+; /home/ateebam/.dotfiles/systemd/.config/systemd/user/niri_orientation.service
+
+
+[Unit]
+Description=Niri display orientation daemon
+PartOf=graphical-session.target
+After=graphical-session.target
+Requisite=graphical-session.target
+
+[Service]
+ExecStartPre=/bin/sleep 5
+ExecStart=/home/ateebam/.local/bin/niri_orientation.sh
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=graphical-session.target
